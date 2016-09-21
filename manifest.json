@@ -1,0 +1,23 @@
+{
+  "name": "Color Status",
+  "version": "0.1",
+  "description":
+    "This extension will group the content based on status and give you notifications if any job got failed or finished. Its a private extension.",
+   "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
+  "permissions": [
+    "file:///C:/Users/U53085/Desktop/*","notifications","storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+   "file:///C:/Users/U53085/Desktop/*"              ],
+      "js": ["store.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": { "scripts": ["test.js"] },
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "48.png"
+  ]
+}
