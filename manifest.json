@@ -5,12 +5,15 @@
     "This extension will group the content based on status and give you notifications if any job got failed or finished. Its a private extension.",
    "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
   "permissions": [
-    "file:///C:/Users/U53085/Desktop/*","notifications","storage"
+    "http://*.corp.netapp.com","notifications","storage"
   ],
   "content_scripts": [
     {
       "matches": [
-   "file:///C:/Users/U53085/Desktop/*"              ],
+			"http://*.corp.netapp.com:9080/pentaho-di/kettle/status",
+              "http://*.corp.netapp.com:9002/pentaho-di/kettle/status",
+              "http://*.corp.netapp.com:9003/pentaho-di/kettle/status",
+              "http://*.corp.netapp.com:9004/pentaho-di/kettle/status"             ],
       "js": ["store.js"],
       "run_at": "document_end"
     }
