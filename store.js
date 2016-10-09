@@ -1,3 +1,7 @@
+setTimeout(function(){
+   window.location.reload(1);
+}, 30000);
+
 var str=document.body.innerHTML;
 var finished="";
 var finished_with_err="";
