@@ -1,7 +1,7 @@
 
 {
   "name": "Color Status",
-  "version": "0.1",
+  "version": "0.3",
   "description":
     "This extension will group the content based on status and give you notifications if any job got failed or finished.",
    "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
