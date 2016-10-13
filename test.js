@@ -1,11 +1,14 @@
 function show(x)
 {
+	if(x!="" || x!=null)
+	{
 new Notification("Job Notifications", {
 	type: "progress",
     icon: '48.png',
     body: x,
 	progress:45
   });
+	}
 }
 
 chrome.runtime.onMessage.addListener(
